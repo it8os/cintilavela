@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cintila</title>
+    <!-- Inclua os arquivos CSS e JavaScript do Bootstrap -->
+
+    <link rel="icon" href="LOGO DESENHADA BRANCA.png" type="image/png"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+    <style>
+        body {
+         font-family: 'Poppins', sans-serif;
+     }
+     h1, h2, h3, h4, h5, h6 {
+         font-family: 'Poppins', sans-serif;
+     }
+     h2{
+        padding-top: 20px;
+    padding-bottom: 10px;
+     }
+     .navbar{
+    background-color: #c2afe8;
+     }
+     .title{
+        padding: 20px;
+        width: 60px;
+     }
+     .icon{
+    width: 90px;
+     }
+     .p1{
+    width: 100px;
+     }
+    .container{
+    align-items: center;
+     }
+     .row1{
+        margin-left: 650px;
+        margin-bottom: 20;
+
+     }
+     .row2{
+        margin-left: 0px;
+        padding: 5px;
+     }
+     .row3{
+        margin-left: 400px;
+        padding: 5px;
+     }
+
+     .footer{
+        padding: 10px;
+        margin-bottom: 20;
+
+             }
+
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+a {
+ text-decoration: none;
+
+}
+
+.btn-roxo2 {
+        background-color: #c2afe8;
+        color: #ffffff;
+        border: none;
+        width: 540px;
+    }
+    .btn-roxo2:hover {
+        background-color: #814cc7;
+    }
+    .btn-roxo:hover {
+        background-color: #814cc7;
+    }
+    .btn-primary {
+        background-color: #343738;
+        color: white;
+        border: none;
+        margin-top: -10px; /* Adicione a margem desejada aqui */
+        margin-right: 0px; /* Adicione a margem desejada aqui */
+    }
+
+.btn-primary:hover {
+    background-color: #343738;
+}
+.container-fluid1{
+    background-color: #fffc93;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 92.5;
+    margin-right: 92.5;
+    text-align: center;
+}
+
+.container2{
+    padding: 20PX;
+
+}
+.card {
+            background-color: #ffffff; /* Fundo branco */
+            border: 1px solid #ccc;
+        }
+        .card-img-top {
+            max-height: AUTOpx; /* Altura máxima da imagem */
+        }
+        .btn-roxo {
+        background-color: #c2afe8;
+        color: white;
+        border: none;
+    }
+
+    /* Estilo para o botão roxo ao passar o mouse (opcional) */
+    .btn-roxo:hover {
+        background-color: #814cc7;
+    }
+    .container3 {
+    max-width: auto;
+    margin-top: 30px;
+    margin-bottom: 0px ;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+}
+.container-fluid2{
+    background-color: #ebebeb;
+    width: 900;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+
+
+}
+
+.position-relative1{
+    background-color: #c2afe8;
+}
+.btn-outline {
+    border-color: #814cc7;
+    color: #814cc7;
+}
+ /* Estilo para a tela dividida em duas colunas */
+ .tela-dividida {
+            display: flex; /* Ativa o modo flexbox */
+        }
+
+        /* Estilo para cada coluna */
+        .coluna {
+            flex: 1; /* As colunas ocuparão o espaço disponível igualmente */
+            padding: 120px; /* Espaçamento interno para separar o conteúdo */
+           
+        }
+        .imagem {
+            max-width: 110%; /* A imagem não excederá a largura da coluna */
+            height: auto; /* Mantém a proporção da imagem */
+            
+        }
+        .navbar {
+    background-color: #c2afe8;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    border-bottom: 1px solid #ffffff;
+line-height: 1.3;
+ 
+}
+
+.nav-left, .nav-right {
+
+    align-items: center;
+}
+
+.nav-left .icon, .nav-right .hamburger {
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nav-center h1 {
+    color: white;
+    margin: 0;
+
+}
+.logo {
+color: white;
+    font-size: 43px;
+    font-weight: bold;
+  }
+.content {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+        @font-face {
+            font-family: 'Kaoly';
+            src: url('kaoly.ttf') format('truetype');
+            /* Substitua 'caminho/para/sua/fonte/Kaoly.ttf' pelo caminho real para seu arquivo de fonte */
+        }
+
+        /* Estilize seu elemento de texto com a fonte 'Kaoly' */
+        .u-header__navbar-brand-text {
+            font-family: 'Kaoly', sans-serif;
+            /* Adicione outros estilos, se necessário */
+        }
+
+        .search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  padding: 40px;
+  height: 30px;
+  width: 30px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #c2afe8;
+  padding-right: 40px;
+  color:#fff;
+}
+.input-search::placeholder{
+  color:rgba(255,255,255,.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 20px;
+  height: 20px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.icons {
+    color: white;
+    font-size: 1.2em;
+
+
+}
+.navbar1 {
+    background-color: #cebcf1;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+font-size: 13px;
+font-weight: 500;
+
+
+ 
+}
+.navbar a, .navbar1 a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+.container4{
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.image_2 {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.about_taital {
+    width: 100%;
+    float: left;
+    font-size: 50px;
+    color: #050505;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+.image_3 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.lorem_text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    color: #050505;
+}
+.icon{
+  width: 40px;
+height: auto;
+}
+.rounded-container {
+
+background-color: #e6f3fb;
+
+padding: 50px;
+
+}
+ </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-left">
+      <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i></button>
+        <input type="text" class="input-search" placeholder="Pesquisar...">
+      </div>
+      
+    </div>
+    <div class="nav-center">
+      <span class="u-header__navbar-brand-text logo">cintila</span>
+    </div>
+    <div class="nav-right">
+    <div class="icons">
+        <a href="" ><i class="fas fa-heart" title="Favoritos"></i></a>
+        <a href="" ><i class="fas fa-regular fa-user" style="color: #ffffff;" title="Login"></i></a>
+        <a href="carrinho.html" ><i class="fas fa-shopping-cart" title="Carrinho" ></i></a>
+    </div>
+    </div>
+    </div>
+    <div class="navbar1">
+      <div class="nav-right">
+      <a href="index.html">PÁGINA INICIAL</a>
+      <a href="produtos.html">PRODUTOS</a>
+      <a href="sobrenos.html">SOBRE</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="blog.html">BLOG</a>
+      </div>
+    </div>
+  </div>
+    <!-- Conteúdo da página -->
+
+
+    <div class="container4">
+     
+      <h1 class="about_taital" style="color: #343738;">Sobre nossa loja.</h1>
+      <div class="image_3"><img src="velaasv-removebg-preview.png" class="img-fluid alt="Image 3"></div>
+      <p class="lorem_text">A Cintila é uma empresa júnior que, nasce com o intuito de ajudar os jovens com uma resposta alternativa e artesanal: AROMATERAPIA por meios de velas aromáticas.</p>
+    </div>
+
+
+    
+    <div class="rounded-container" style="margin-top: 60px;">
+<!-- What We Do Section -->
+<div class="container space-2 mt-5">
+  <div class="row justify-content-lg-between">
+    <div class="col-lg-4 mb-7 mb-lg-0">
+      <!-- Title -->
+      <small class="text-secondary text-uppercase font-weight-medium mb-2">Ainda na dúvida se vale a pena comprar na cintila? Entenda o </small>
+      <h1 class="font-weight-bold">Por que escolher as velas aromáticas da <span style="color: #814cc7;">cintila</span>?</h1>
+      <p>Aqui na nossa loja, acreditamos que escolher uma vela vai além de simplesmente iluminar um ambiente, é uma jornada sensorial que cativa e transforma.</p>
+      <!-- End Title -->
+    </div>
+
+    <div class="col-lg-7">
+      <div class="row">
+        <div class="col-sm-6 mb-3">
+          <!-- Icon Blocks -->
+          <figure id="icon26" class="svg-preloader ie-height-56 w-100 max-width-8 mb-3">
+            <img class="icon" src="velas-de-spa.png" >
+          </figure>
+          <h4 class="h5">Bons Aromas que Contam Histórias</h4>
+          <p class="font-size-1">Cada vela em nossa coleção é cuidadosamente elaborada para contar uma história única por meio de seus aromas.</p>
+          <!-- End Icon Blocks -->
+        </div>
+
+        <div class="col-sm-6 mb-3">
+          <!-- Icon Blocks -->
+          <figure id="icon27" class="svg-preloader ie-height-56 w-100 max-width-8 mb-3">
+            <img class="icon" src="brilhante.png" >
+          </figure>
+          <h4 class="h5">Aromaterapia</h4>
+          <p class="font-size-1">Nossas velas são enriquecidas com óleos essenciais de alta qualidade, cuidadosamente selecionados para proporcionar benefícios à mente, corpo e alma.</p>
+          <!-- End Icon Blocks -->
+        </div>
+
+        <div class="w-100"></div>
+
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <!-- Icon Blocks -->
+          <figure id="icon25" class="svg-preloader ie-height-56 w-100 max-width-8 mb-3">
+            <img class="icon" src="brilhante.png" >
+          </figure>
+          <h4 class="h5">Arte e Elegância em Cada Detalhe </h4>
+          <p class="font-size-1">Não se trata apenas dos aromas; nossas velas são verdadeiras obras de arte. Cada uma é criada com atenção meticulosa aos detalhes, desde a escolha dos materiais até a embalagem elegante</p>
+          <!-- End Icon Blocks -->
+        </div>
+
+        <div class="col-sm-6">
+          <!-- Icon Blocks -->
+          <figure id="icon28" class="svg-preloader ie-height-56 w-100 max-width-8 mb-3">
+            <img class="icon" src="velas-de-spa.png" >
+
+          </figure>
+          <h4 class="h5">Inspiração para Todos os Momentos</h4>
+          <p class="font-size-1">Seja para relaxar após um longo dia, criar uma atmosfera romântica ou celebrar momentos especiais, nossa loja oferece uma variedade de velas para se adaptar a todas as ocasiões.</p>
+          <!-- End Icon Blocks -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End What We Do Section -->
+</div>
+        
+
+    
+
+ <!-- Footer Start -->
+ <div class="container-fluid2 bg-dark text-white-50 footer pt-3 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">FALE CONOSCO!</h5>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(11) 9 1234-5678</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>cintilavelas@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/cintilavelas/"><i class="fa fa-instagram"  style="color: #ffffff;" ></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fas fa-tiktok"  style="color: #ffffff;" ></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 align-items-center">
+                <h5 class="text-white mb-4">NAVEGAÇÃO</h5>
+                <a class="btn btn-link text-white-50" href="index.html">Página inicial</a>
+                <a class="btn btn-link text-white-50" href="blog.html">Blog</a>
+                <a class="btn btn-link text-white-50" href="Produtos.html">Produtos</a>
+                <a class="btn btn-link text-white-50" href="sobrenos.html">Quem somos</a>
+                <a class="btn btn-link text-white-50" href="Contatos.html">Contato</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">GALERIA DE FOTOS</h5>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="bauniexpo.png" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="Poncãxspo.png">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="momileexpo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Faça parte do clube cintila!</h5>
+                <p>Receba todas as informações em primeira mão.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Cintila</a>, Todos os direitos reservados. 
+                    
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="index.html">Página inicial</a>
+                        <a href="Produtos.html">Produtos</a>
+                        <a href="sobrenos.html">Quem somos</a>
+                        <a href="Contatos.html">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- Inclua os arquivos JavaScript do Bootstrap no final do corpo da página -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

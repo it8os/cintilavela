@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cintila</title>
+    <!-- Inclua os arquivos CSS e JavaScript do Bootstrap -->
+
+ <!-- Adicione isso ao cabeçalho do seu HTML -->
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xjP5FPefKNEQ0D9lCxgp4atV+QeP5YTQHSwLCiEdU5W6VbnXYzhE3+VE58kEFnY5mNISbAyo+Mdz5t66g+6sNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsparallaxer.css">
+
+        <!-- Slick Carousel CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+        <!-- jQuery (obrigatório para o Slick Carousel) -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+        <!-- Slick Carousel JS -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="icon" href="logo vazada.png" type="image/png"> 
+
+    <style>
+        body {
+         font-family: 'Poppins', sans-serif;
+     }
+     h1, h2, h3, h4, h5, h6 {
+         font-family: 'Poppins', sans-serif;
+     }
+     h2{
+        padding-top: 20px;
+    padding-bottom: 10px;
+     }
+
+     .p1{
+    width: 300px;
+     }
+    .container{
+    align-items: center;
+     }
+     .row1{
+        margin-left: 650px;
+        margin-bottom: 20;
+
+     }
+     .row2{
+        margin-left: 0px;
+        padding: 5px;
+     }
+     .row3{
+        margin-left: 400px;
+        padding: 5px;
+     }
+
+     .footer{
+        padding: 10px;
+        margin-bottom: 20;
+
+             }
+
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+a {
+ text-decoration: none;
+
+}
+
+.btn-roxo2 {
+        background-color: #c2afe8;
+        color: #ffffff;
+        border: none;
+        width: 540px;
+    }
+    .btn-roxo2:hover {
+        background-color: #814cc7;
+    }
+    .btn-roxo:hover {
+        background-color: #814cc7;
+    }
+    .btn-primary {
+        background-color: #343738;
+        color: white;
+        border: none;
+        margin-top: -10px; /* Adicione a margem desejada aqui */
+        margin-right: 0px; /* Adicione a margem desejada aqui */
+    }
+
+.btn-primary:hover {
+    background-color: #343738;
+}
+.container-fluid1{
+    background-color: #fffc93;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 92.5;
+    margin-right: 92.5;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container2{
+    padding: 20PX;
+
+}
+.container8{
+  background-color: #e6f3fb;
+
+    border-radius: 15px;
+margin: 50px;
+margin-left: 120px;
+margin-right: 120px;
+padding-left: 0px;
+}
+.overlapping-image {
+            position: relative;
+            top: -20px; /* Ajuste este valor conforme necessário para a imagem sair pela parte de cima */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: auto;
+        }
+.card {
+            background-color: #ffffff; /* Fundo branco */
+            border: 1px solid #ccc;
+        }
+        .card-img-top {
+            max-height: AUTOpx; /* Altura máxima da imagem */
+        }
+        .btn-roxo {
+        background-color: #c2afe8;
+        color: white;
+        border: none;
+    }
+
+    /* Estilo para o botão roxo ao passar o mouse (opcional) */
+    .btn-roxo:hover {
+        background-color: #814cc7;
+    }
+    .container3 {
+    max-width: auto;
+    margin-top: 30px;
+    margin-bottom: 0px ;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+}
+.container-fluid2{
+    background-color: #ebebeb;
+    width: 900;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+
+
+}
+
+.position-relative1{
+    background-color: #c2afe8;
+}
+.btn-outline {
+    border-color: #814cc7;
+    color: #814cc7;
+}
+.btn-outline1 {
+    border-color: #ff8fcb;
+    color: #ff8fcb;
+}
+    .btn-outline1:hover {
+        background-color: #ff8fcb;
+    }
+
+  /* Estilize a tela dividida */
+  .container5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+/* Estilize a parte esquerda */
+.left {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Estilize a parte direita */
+.right {
+    flex: 1.5;
+    padding: 40px;
+    background-color: #ffffff;
+}
+  /* Estilos CSS para o FAQ */
+  .faq {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+
+    }
+
+    .question {
+      cursor: pointer;
+      background-color: #fff;
+      padding: 10px;
+      border: 1px  #814cc7;
+      margin-bottom: 5px;
+    }
+
+    .answer {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+    .container-fluid5{
+    background-color: #c2afe8;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 92.5;
+    margin-right: 92.5;
+    text-align: center;
+}
+/*banerr*/
+.container-fluid {
+  max-width: 1600px;
+}
+.banner-blocks {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.block-1 { grid-area: 1 / 1 / 3 / 8; }
+.block-2 { grid-area: 1 / 8 / 2 / 13; }
+.block-3 { grid-area: 2 / 8 / 3 / 13; }
+
+@media screen and (max-width:1140px) {
+  .banner-blocks {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .block-1 { grid-area: 1 / 1 / 3 / 2; }
+  .block-2 { grid-area: 3 / 1 / 4 / 2; }
+  .block-3 { grid-area: 4 / 1 / 5 / 2; }
+  
+}
+
+/* banner ad */
+.banner-ad {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+line-height: 0px;
+}
+.banner-ad.blue {
+  background: #e6f3fb;
+}
+.banner-ad .swiper-pagination {
+  bottom: 40px;
+  left: 0;
+  right: 0;
+
+}
+.banner-ad .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin: 4px;
+  background: #FFF;
+  opacity: 1;
+  transition: background 0.3s ease-out;
+}
+.banner-ad .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: #814cc7;
+}
+.banner-ad .swiper-slide {
+  
+  min-height: 630px;
+  display: flex;
+}
+/* .banner-ad .banner-content {
+  padding: 52px;
+}
+.banner-ad.large .banner-content {
+  padding: 90px;
+} */
+
+.banner-ad .banner-content .sale {
+  position: relative;
+  display: inline-block;
+}
+.banner-ad .banner-content .sale:before {
+  content: '';
+  width: 80px;
+  border-bottom: 1px solid #111;
+  position: absolute;
+  bottom: 6px;
+}
+.banner-ad .banner-content .sale:after {
+  content: 'SALE';
+ 
+  position: absolute;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #252525;
+  bottom: 0;
+  right: 0;
+}
+.banner-ad .banner-content .banner-title {
+  letter-spacing: 0.02em;
+  font-size: 33px;
+}
+.banner-ad.large .banner-content .categories {
+  color: var(--accent-color);
+}
+.banner-ad.large .banner-content .banner-title {
+  font-size: 54px;
+}
+
+/* Swiper carousel */
+.swiper-prev,
+.swiper-next {
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  background: #F1F1F1;
+  color: #222222;
+  padding: 0;
+  text-align: center;
+  border-radius: 10px;
+  --bs-btn-border-color: transparent;
+  --bs-btn-active-bg: #ec9b22;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-hover-bg: #FFC43F;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-disabled-color: #ccc;
+  --bs-btn-disabled-bg: #eaeaea;
+  --bs-btn-disabled-border-color: #eaeaea
+}
+.swiper-prev:hover,
+.swiper-next:hover {
+  background: #FFC43F;
+}
+.btn-link {
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  text-transform: capitalize;
+  color: #787878;
+}
+.bg-info {
+  background-color: #c2afe8;
+}
+.container-fluid3 {
+padding: 70px;
+}
+    .rounded-container {
+
+      background-color: #ff8fcb;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20PX;
+    }
+    .rounded-container1 {
+
+background-color: #e6f3fb;
+border-radius: 15px;
+padding: 20px;
+margin: 20PX;
+}
+
+    #scrollTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff8fcb;
+            color: #fff;
+            border: none;
+            border-radius: 60%;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .column1 {
+            flex: 1;
+            padding: 0px;
+        }
+        .column2 {
+            flex: 2;
+            padding: 20px;
+        }
+        .text1 {
+            font-size: 24px; /* Altere este valor conforme necessário */
+        }
+
+        .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #814cc7;
+  z-index: 1;
+  width: 60%;
+  height: 70%;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar {
+    background-color: #c2afe8;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    border-bottom: 1px solid #ffffff;
+line-height: 1.3;
+ 
+}
+
+.nav-left, .nav-right {
+
+    align-items: center;
+}
+
+.nav-left .icon, .nav-right .hamburger {
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nav-center h1 {
+    color: white;
+    margin: 0;
+
+}
+.logo {
+color: white;
+    font-size: 43px;
+    font-weight: bold;
+
+  }
+.content {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+        @font-face {
+            font-family: 'Kaoly';
+            src: url('kaoly.ttf') format('truetype');
+            /* Substitua 'caminho/para/sua/fonte/Kaoly.ttf' pelo caminho real para seu arquivo de fonte */
+        }
+
+        /* Estilize seu elemento de texto com a fonte 'Kaoly' */
+        .u-header__navbar-brand-text {
+            font-family: 'Kaoly', sans-serif;
+            /* Adicione outros estilos, se necessário */
+        }
+
+        .search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  padding: 40px;
+  height: 30px;
+  width: 30px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #c2afe8;
+  padding-right: 40px;
+  color:#fff;
+}
+.input-search::placeholder{
+  color:rgba(255,255,255,.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 20px;
+  height: 20px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.icons {
+    color: white;
+    font-size: 1.2em;
+    padding: 8px;
+
+}
+.navbar1 {
+    background-color: #cebcf1;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+font-size: 13px;
+font-weight: 500;
+
+
+ 
+}
+.navbar a, .navbar1 a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 8px;
+            display: inline-block;
+        }
+        #hero-banner {
+            position: relative;
+            height: 550px;
+            background: url('fundo.png') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: self-start;
+            justify-content: center;
+            color: #343738;
+
+            font-size: 2em;
+            font-size: 5rem;
+        }
+#typing-container {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #333;
+            font-size: 90px;
+            padding-right: 8px;
+            color: #814cc7;
+        }
+                /* Estilos opcionais para personalizar a aparência da galeria */
+                .slick-slide img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery {
+            max-width: 800px;
+            margin: auto;
+        }
+   
+        /* Adicione este estilo para arredondar as imagens */
+        .js-slick-carousel img {
+            border-radius: 10px; /* Ou qualquer valor que você preferir */
+            overflow: hidden;
+
+        
+        }
+        /* Personalização das bolinhas do carrossel */
+.slick-dots {
+    margin-top: 50px; /* Adicione o espaçamento desejado */
+}
+
+.slick-dots li button {
+    background-color: #814cc7; /* Cor desejada */
+    font-size: 12px; /* Tamanho desejado */
+    line-height: 12px;
+    border-radius: 10px; /* Ou qualquer valor que você preferir */
+}
+
+.slick-dots li.slick-active button {
+    background-color: #c2afe8; /* Cor desejada para a bolinha ativa */
+    border-radius: 10px; /* Ou qualquer valor que você preferir */
+}
+/* Adicione este estilo para adicionar margem entre as imagens do carrossel */
+.slick-slide {
+    margin-right: 10px; /* ou qualquer valor desejado para a margem à direita */
+    margin-left: 10px; /* ou qualquer valor desejado para a margem à esquerda */
+}
+.container9 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+ </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="nav-left">
+    <div class="search-box">
+      <button class="btn-search"><i class="fas fa-search"></i></button>
+      <input type="text" class="input-search" placeholder="Pesquisar...">
+    </div>
+    
+  </div>
+  <div class="nav-center">
+    <span class="u-header__navbar-brand-text logo">cintila</span>
+  </div>
+  <div class="nav-right">
+  <div class="icons">
+    <a href="" ><i class="fas fa-heart"></i></a>
+      <a href="" ><i class="fas fa-regular fa-user" style="color: #ffffff;"></i></a>
+      <a href="carrinho.html" ><i class="fas fa-shopping-cart"></i></a>
+  </div>
+  </div>
+  </div>
+  <div class="navbar1">
+    <div class="nav-right">
+    <a href="index.html">PÁGINA INICIAL</a>
+    <a href="produtos.html">PRODUTOS</a>
+    <a href="sobrenos.html">SOBRE</a>
+    <a href="contato.html">CONTATO</a>
+    <a href="blog.html">BLOG</a>
+    </div>
+  </div>
+</div>
+
+    <!-- Conteúdo da página -->
+    
+<!-- Hero Section -->
+
+
+<!-- Hero Section -->
+<div id="hero-banner">
+  <div class="container space-top-3 space-top-md-5 space-top-lg-4 space-bottom-1 space-bottom-sm-2">
+    <div class="w-lg-75">
+      <h1 class="display-3 font-size-md-down-4 font-weight-bold mb-5">
+Seja bem-vindo a
+<div id="typing-container"> C</div>
+      </h1>
+      <p class="lead font-weight-normal"> O lugar onde a luz se transforma em poesia e o encanto se torna essencial. Aqui, sua jornada começa com o brilho suave de inúmeras opções, cada vela contando uma história única.</p>
+    </div>
+  </div>
+
+  
+
+</div>
+</div>
+<div class="container9">
+
+
+  <!-- Carrossel de Imagens -->
+  <div class="js-slick-carousel">
+      <div><img src="lilacaa.png" alt="Imagem 4" class="img-fluid"></div>
+      <div><img src="mobaca.png" alt="Imagem 4" class="img-fluid" ></div>
+      <div><img src="poncaca.png" alt="Imagem 5" class="img-fluid" ></div>
+      <div><img src="boocaa.png" alt="Imagem 6" class="img-fluid" ></div>
+
+      <div><img src="cinnacaa.png" alt="Imagem 5" class="img-fluid" ></div>
+
+      <!-- Adicione mais imagens conforme necessário -->
+  </div>
+  </div>
+<!-- End Hero Section -->
+
+
+
+    
+  
+
+<!--destaques-->
+<!-- Products -->
+<div class="container-fluid3" style="margin-top: 60px;">
+  <h1 style="margin-left: 50px;">Destaques</h1>
+  <hr>
+<div class="row mx-n2 mx-sm-n3 mt-5">
+  <div class="col-6 col-lg-3 px-2 px-sm-3 mb-3 mb-sm-5">
+<!-- Product -->
+<div class="card text-center h-100">
+  <div class="position-relative">
+    <img class="card-img-top" src="lilaexpo.png" alt="Image Description">
+    
+    <div class="position-absolute top-0 right-0 pt-3 pr-3">
+      
+    </div>
+  </div>
+  
+  <div class="card-body pt-4 px-4 pb-0">
+    <div class="mb-2">
+      <a class="d-inline-block text-secondary small font-weight-medium mb-1" href="#">Velas</a>
+      <h4 class="font-size-1 font-weight-normal">
+        <a class="text-secondary" href="#">Vela Lila</a>
+      </h4>
+      <div class="d-block">
+        <span class="font-weight-medium">R$16,90</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-footer border-0 pt-0 pb-4 px-4">
+    <div class="mb-3">
+      <a class="d-inline-flex align-items-center small" href="#">
+        <div class="text-warning mr-2">
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="far fa-star text-muted"></small>
+        </div>
+        <span class="text-secondary">40</span>
+      </a>
+    </div>
+    
+    <button type="button" class="btn btn-sm btn-outline1 btn-sm-wide btn-pill transition-3d-hover">Add to Cart</button>
+    <button type="button" class="btn btn-sm btn-icon btn-outline-secondary rounded-circle" data-toggle="tooltip" data-placement="top" title="Save for later">
+      <span class="fas fa-heart btn-icon__inner"></span>
+    </button>
+  </div>
+</div>
+</div>
+
+
+<div class="col-6 col-lg-3 px-2 px-sm-3 mb-3 mb-sm-5">
+ <!-- Product -->
+<div class="card text-center h-100">
+  <div class="position-relative">
+    <img class="card-img-top" src="bauniexpo.png" alt="Image Description">
+    
+    <div class="position-absolute top-0 right-0 pt-3 pr-3">
+    </div>
+  </div>
+  
+  <div class="card-body pt-4 px-4 pb-0">
+    <div class="mb-2">
+      <a class="d-inline-block text-secondary small font-weight-medium mb-1" href="#">Velas</a>
+      <h4 class="font-size-1 font-weight-normal">
+        <a class="text-secondary" href="#">Vela Bauni</a>
+      </h4>
+      <div class="d-block">
+        <span class="font-weight-medium">R$16,90</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-footer border-0 pt-0 pb-4 px-4">
+    <div class="mb-3">
+      <a class="d-inline-flex align-items-center small" href="#">
+        <div class="text-warning mr-2">
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="far fa-star text-muted"></small>
+        </div>
+        <span class="text-secondary">40</span>
+      </a>
+    </div>
+    <button type="button" class="btn btn-sm btn-outline1 btn-sm-wide btn-pill transition-3d-hover">Add to Cart</button>
+    <button type="button" class="btn btn-sm btn-icon btn-outline-secondary rounded-circle" data-toggle="tooltip" data-placement="top" title="Save for later">
+      <span class="fas fa-heart btn-icon__inner"></span>
+    </button>
+  </div>
+</div>
+
+  <!-- End Product -->
+</div>
+
+<div class="col-6 col-lg-3 px-2 px-sm-3 mb-3 mb-sm-5">
+  <!-- Product -->
+<div class="card text-center h-100">
+  <div class="position-relative">
+    <img class="card-img-top" src="Poncãxspo.png" alt="Image Description">
+    
+    <div class="position-absolute top-0 right-0 pt-3 pr-3">
+
+    </div>
+  </div>
+  
+  <div class="card-body pt-4 px-4 pb-0">
+    <div class="mb-2">
+      <a class="d-inline-block text-secondary small font-weight-medium mb-1" href="#">Velas</a>
+      <h4 class="font-size-1 font-weight-normal">
+        <a class="text-secondary" href="#">Vela Poncã          </a>
+      </h4>
+      <div class="d-block">
+        <span class="font-weight-medium">R$16,90</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-footer border-0 pt-0 pb-4 px-4">
+    <div class="mb-3">
+      <a class="d-inline-flex align-items-center small" href="#">
+        <div class="text-warning mr-2">
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="far fa-star text-muted"></small>
+        </div>
+        <span class="text-secondary">40</span>
+      </a>
+    </div>
+    <button type="button" class="btn btn-sm btn-outline1 btn-sm-wide btn-pill transition-3d-hover">Add to Cart</button>
+    <button type="button" class="btn btn-sm btn-icon btn-outline-secondary rounded-circle" data-toggle="tooltip" data-placement="top" title="Save for later">
+      <span class="fas fa-heart btn-icon__inner"></span>
+    </button>
+  </div>
+</div>
+
+</div>
+
+<div class="col-6 col-lg-3 px-2 px-sm-3 mb-3 mb-sm-5">
+  <!-- Product -->
+<div class="card text-center h-100">
+  <div class="position-relative">
+    <img class="card-img-top" src="cinnaexpo.png" alt="Image Description">
+    
+    <div class="position-absolute top-0 right-0 pt-3 pr-3">
+
+    </div>
+  </div>
+  
+  <div class="card-body pt-4 px-4 pb-0">
+    <div class="mb-2">
+      <a class="d-inline-block text-secondary small font-weight-medium mb-1" href="#">Velas</a>
+      <h4 class="font-size-1 font-weight-normal">
+        <a class="text-secondary" href="#">Vela Cinnamon</a>
+      </h4>
+      <div class="d-block">
+        <span class="font-weight-medium">R$16,90</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-footer border-0 pt-0 pb-4 px-4">
+    <div class="mb-3">
+      <a class="d-inline-flex align-items-center small" href="#">
+        <div class="text-warning mr-2">
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="far fa-star text-muted"></small>
+        </div>
+        <span class="text-secondary">40</span>
+      </a>
+    </div>
+    <button type="button" class="btn btn-sm btn-outline1 btn-sm-wide btn-pill transition-3d-hover">Add to Cart</button>
+    <button type="button" class="btn btn-sm btn-icon btn-outline-secondary rounded-circle" data-toggle="tooltip" data-placement="top" title="Save for later">
+      <span class="fas fa-heart btn-icon__inner"></span>
+    </button>
+  </div>
+</div>
+
+  <!-- End Product -->
+</div>
+</div>
+</div>
+<!-- End Products -->
+<!--fim destaquees-->
+
+  <!--novidades -->
+<!--latinhas-->
+<div class="container-fluid3" style="margin-top: -80px;">
+  <h1 style="margin-left: 20px;">Novidades</h1>
+  <hr>
+<div class="row mx-n2 mx-sm-n3 mt-5">
+  <div class="col-6 col-lg-3 px-2 px-sm-3 mb-3 mb-sm-5">
+<!-- Product -->
+<div class="card text-center h-100">
+  <div class="position-relative">
+    <img class="card-img-top" src="bauniexpo.png" alt="Image Description">
+    
+    <div class="position-absolute top-0 right-0 pt-3 pr-3">
+      
+    </div>
+  </div>
+  
+  <div class="card-body pt-4 px-4 pb-0">
+    <div class="mb-2">
+      <a class="d-inline-block text-secondary small font-weight-medium mb-1" href="#">Velas </a>
+      <h4 class="font-size-1 font-weight-normal">
+        <a class="text-secondary" href="#">Vela Bauni</a>
+      </h4>
+      <div class="d-block">
+        <span class="font-weight-medium">R$16,90</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-footer border-0 pt-0 pb-4 px-4">
+    <div class="mb-3">
+      <a class="d-inline-flex align-items-center small" href="#">
+        <div class="text-warning mr-2">
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="far fa-star text-muted"></small>
+        </div>
+        <span class="text-secondary">40</span>
+      </a>
+    </div>
+    
+    <button type="button" class="btn btn-sm btn-outline1 btn-sm-wide btn-pill transition-3d-hover">Add to Cart</button>
+    <button type="button" class="btn btn-sm btn-icon btn-outline-secondary rounded-circle" data-toggle="tooltip" data-placement="top" title="Save for later">
+      <span class="fas fa-heart btn-icon__inner"></span>
+    </button>
+  </div>
+</div>
+
+</div>
+
+<div class="col-6 col-lg-3 px-2 px-sm-3 mb-3 mb-sm-5">
+ <!-- Product -->
+<div class="card text-center h-100">
+  <div class="position-relative">
+    <img class="card-img-top" src="momileexpo.png" alt="Image Description">
+    
+    <div class="position-absolute top-0 right-0 pt-3 pr-3">
+    </div>
+  </div>
+  
+  <div class="card-body pt-4 px-4 pb-0">
+    <div class="mb-2">
+      <a class="d-inline-block text-secondary small font-weight-medium mb-1" href="#">Velas</a>
+      <h4 class="font-size-1 font-weight-normal">
+        <a class="text-secondary" href="#">Vela Momile</a>
+      </h4>
+      <div class="d-block">
+        <span class="font-weight-medium">R$16,90</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-footer border-0 pt-0 pb-4 px-4">
+    <div class="mb-3">
+      <a class="d-inline-flex align-items-center small" href="#">
+        <div class="text-warning mr-2">
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="far fa-star text-muted"></small>
+        </div>
+        <span class="text-secondary">40</span>
+      </a>
+    </div>
+    <button type="button" class="btn btn-sm btn-outline1 btn-sm-wide btn-pill transition-3d-hover">Add to Cart</button>
+    <button type="button" class="btn btn-sm btn-icon btn-outline-secondary rounded-circle" data-toggle="tooltip" data-placement="top" title="Save for later">
+      <span class="fas fa-heart btn-icon__inner"></span>
+    </button>
+  </div>
+</div>
+
+  <!-- End Product -->
+</div>
+
+<div class="col-6 col-lg-3 px-2 px-sm-3 mb-3 mb-sm-5">
+  <!-- Product -->
+<div class="card text-center h-100">
+  <div class="position-relative">
+    <img class="card-img-top" src="Poncãxspo.png" alt="Image Description">
+    
+    <div class="position-absolute top-0 right-0 pt-3 pr-3">
+
+    </div>
+  </div>
+  
+  <div class="card-body pt-4 px-4 pb-0">
+    <div class="mb-2">
+      <a class="d-inline-block text-secondary small font-weight-medium mb-1" href="#">Velas</a>
+      <h4 class="font-size-1 font-weight-normal">
+        <a class="text-secondary" href="#">Vela Poncã</a>
+      </h4>
+      <div class="d-block">
+        <span class="font-weight-medium">R$16,90</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-footer border-0 pt-0 pb-4 px-4">
+    <div class="mb-3">
+      <a class="d-inline-flex align-items-center small" href="#">
+        <div class="text-warning mr-2">
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="far fa-star text-muted"></small>
+        </div>
+        <span class="text-secondary">40</span>
+      </a>
+    </div>
+    <button type="button" class="btn btn-sm btn-outline1 btn-sm-wide btn-pill transition-3d-hover">Add to Cart</button>
+    <button type="button" class="btn btn-sm btn-icon btn-outline-secondary rounded-circle" data-toggle="tooltip" data-placement="top" title="Save for later">
+      <span class="fas fa-heart btn-icon__inner"></span>
+    </button>
+  </div>
+</div>
+
+</div>
+
+<div class="col-6 col-lg-3 px-2 px-sm-3 mb-3 mb-sm-5">
+  <!-- Product -->
+<div class="card text-center h-100">
+  <div class="position-relative">
+    <img class="card-img-top" src="cinnaexpo.png" alt="Image Description">
+    
+    <div class="position-absolute top-0 right-0 pt-3 pr-3">
+
+    </div>
+  </div>
+  
+  <div class="card-body pt-4 px-4 pb-0">
+    <div class="mb-2">
+      <a class="d-inline-block text-secondary small font-weight-medium mb-1" href="#">Velas</a>
+      <h4 class="font-size-1 font-weight-normal">
+        <a class="text-secondary" href="#">Vela Cinnamon</a>
+      </h4>
+      <div class="d-block">
+        <span class="font-weight-medium">R$16,90</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-footer border-0 pt-0 pb-4 px-4">
+    <div class="mb-3">
+      <a class="d-inline-flex align-items-center small" href="#">
+        <div class="text-warning mr-2">
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="fas fa-star"></small>
+          <small class="far fa-star text-muted"></small>
+        </div>
+        <span class="text-secondary">40</span>
+      </a>
+    </div>
+    <button type="button" class="btn btn-sm btn-outline1 btn-sm-wide btn-pill transition-3d-hover">Add to Cart</button>
+    <button type="button" class="btn btn-sm btn-icon btn-outline-secondary rounded-circle" data-toggle="tooltip" data-placement="top" title="Save for later">
+      <span class="fas fa-heart btn-icon__inner"></span>
+    </button>
+  </div>
+</div>
+
+  <!-- End Product -->
+</div>
+</div>
+</div>
+<!-- End Products -->
+<!--fim novidades-->
+
+<!--blog cintila-->
+<div class="container-fluid1  bg-light">
+<section id="latest-blog" class="py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="section-header d-flex align-items-center justify-content-between my-2">
+        <h2 class="section-title" style="padding: 20px;">Conheça os aromas cintila</h2>
+        <div class="btn-wrap align-right">
+          <a href="#" class="d-flex align-items-center nav-link" style="color: #c2afe8;">Ver todos </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <article class="post-item card border-0 shadow-sm p-3">
+          <div class="image-holder zoom-effect">
+            <video width="470" height="auto" controls>
+              <source src="videoplayback.mp4" type="video/mp4">
+          </video>
+          </div>
+          <div class="card-body">
+            <div class="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+              <div class="meta-date">
+                <i class="fas fa-calendar"></i> 22 Aug 2021
+            </div>              
+            </div>
+            <div class="post-header">
+              <h3 class="post-title">
+                <a href="#" class="text-decoration-none" style="color: #c2afe8;">Vela Lila</a>
+              </h3>
+              <p>Conheça nossa vela mais querida de todos, que tem aroma de lavanda e seus beneficios!</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="post-item card border-0 shadow-sm p-3">
+          <div class="image-holder zoom-effect">
+            <video width="470" height="auto" controls>
+              <source src="videoplayback.mp4" type="video/mp4">
+          </video>
+          </div>
+          <div class="card-body">
+            <div class="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+              <div class="meta-date">
+                <i class="fas fa-calendar"></i> 22 Aug 2021
+            </div>
+            
+            </div>
+            <div class="post-header">
+              <h3 class="post-title">
+                <a href="#" class="text-decoration-none" style="color: #c2afe8;">Vela Poncã</a>
+              </h3>
+              <p>Conheça nosso sucesso do verão,  vela de tangerina e seus beneficios!</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="post-item card border-0 shadow-sm p-3">
+          <div class="image-holder zoom-effect">
+            <video width="470" height="auto" controls>
+              <source src="videoplayback.mp4" type="video/mp4">
+          </video>
+          </div>
+          <div class="card-body">
+            <div class="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+              <div class="meta-date">
+                <i class="fas fa-calendar"></i> 22 Aug 2021
+            </div>
+            
+            </div>
+            <div class="post-header">
+              <h3 class="post-title">
+                <a href="#" class="text-decoration-none" style="color: #c2afe8;">Vela Bauni</a>
+              </h3>
+              <p>Conheça a mais nova novidade da cintila, que tem aroma de vanila e seus beneficios!</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+</DIV>
+  <!--fim blog cintila-->
+
+<!--quiz-->
+  <div class="container8">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="overlapping-image" src="cin.png" alt="phone" class="image-float img-fluid">
+      </div>
+      <div class="col-md-5">
+        <h1 class="my-5">Não sabe qual vela cintila você quer adiquirir?</h1>
+        <p class="text1">As velas cintila possuem varios  benefícios e por isso escolher a vela perfeita pode ser desafiador, a equipe Cintila está aqui para guiá-los nessa jornada luminosa. Faça nosso quiz e descubra qual é a vela perfeita e mais indicada para você!</p>
+        <button id="openBtn" type="button" class="btn btn-sm btn-roxo btn-sm-wide btn-pill transition-3d-hover" >Realizar Quiz</button>
+
+<div id="loginPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" id="closeBtn">&times;</span>
+    <iframe style="border-radius: 4px;" width="100%" height="600" src="https://demoquiz.quizclass.net/qual-vela-cintila-melhor-pra-voce" title="Quiz" frameborder="0" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" allow="camera https://demoquiz.quizclass.net/qual-vela-cintila-melhor-pra-voce; microphone https://demoquiz.quizclass.net/qual-vela-cintila-melhor-pra-voce"></iframe>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+<!--quiz fim-->
+
+      <div class="rounded-container" style="margin-top: 60px;">
+<!-- Testimonials Section -->
+<div class="container space-2">
+<!-- Title -->
+<div class="w-md-80 w-lg-50 mb-9">
+  <h2 class="h1 font-weight-medium">Reviews cintilantes! </h2>
+</div>
+<!-- End Title -->
+
+<!-- Testimonials Section -->
+<div class="row">
+  <!-- Testimonials -->
+  <div class="col-lg-4 mb-5">
+    <div class="card border-0 shadow-soft h-100">
+      <div class="card-body p-5">
+        <ul class="list-inline text-warning">
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+        </ul>
+        <div class="mb-auto">
+          <p class="text-dark mb-0">With Front Pay, you can check out across the web and in apps without having to enter any payment information.</p>
+        </div>
+      </div>
+
+      <div class="card-footer border-0 bg-transparent pt-0 px-5 pb-5">
+        <div class="media">
+          <div class="u-avatar mr-3">
+            <img class="img-fluid rounded-circle" src="https://i.pinimg.com/564x/2b/b1/b3/2bb1b3deee373197893d0ccf14bf3a88.jpg" alt="Image Description" height= auto width="60">
+          </div>
+          <div class="media-body">
+            <h4 class="h6 mb-0">Maria Muszynska</h4>
+            <small class="d-block text-secondary">Business Manager</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonials -->
+
+  <!-- Testimonials -->
+  <div class="col-lg-4 mb-5">
+    <div class="card border-0 shadow-soft h-100">
+      <div class="card-body p-5">
+        <ul class="list-inline text-warning">
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+        </ul>
+        <div class="mb-auto">
+          <p class="text-dark mb-0">From boarding passes to transit and movie tickets, there's pretty much nothing you can't store with Front Pay.</p>
+        </div>
+      </div>
+
+      <div class="card-footer border-0 bg-transparent pt-0 px-5 pb-5">
+        <div class="media">
+          <div class="u-avatar mr-3">
+            <img class="img-fluid rounded-circle" src="https://i.pinimg.com/564x/cb/fb/0d/cbfb0d1843f34893485305d483c3bea8.jpg" alt="Image Description" height= auto width="60">
+          </div>
+          <div class="media-body">
+            <h4 class="h6 mb-0">Massalha Shady</h4>
+            <small class="d-block text-secondary">CEO at Slack</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonials -->
+
+  <!-- Testimonials -->
+  <div class="col-lg-4 mb-5">
+    <div class="card border-0 shadow-soft h-100">
+      <div class="card-body p-5">
+        <ul class="list-inline text-warning">
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+          <li class="list-inline-item mx-0">
+            <span class="fas fa-star"></span>
+          </li>
+        </ul>
+        <div class="mb-auto">
+          <p class="text-dark mb-0">I love Front Pay for cash back, reward points and fraud protection – just like when you're swiping your card.</p>
+        </div>
+      </div>
+
+      <div class="card-footer border-0 bg-transparent pt-0 px-5 pb-5">
+        <div class="media">
+          <div class="u-avatar mr-3">
+            <img class="img-fluid rounded-circle" src="https://i.pinimg.com/236x/43/93/6f/43936fc96fcf7b4dfce715e95a8a2c49.jpg" alt="Image Description" height= auto width="60">
+          </div>
+          <div class="media-body">
+            <h4 class="h6 mb-0">Mark McManus</h4>
+            <small class="d-block text-secondary">Front Pay user</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonials -->
+  
+</div>
+</div>
+<!-- End Testimonials Section -->
+      </div>
+
+<!--parceiros-->
+<!-- Clients Section -->
+<div class="container space-1">
+<div class="w-lg-75 mx-lg-auto">
+  <div class="text-center mb-4">
+    <h4 class="u-divider u-divider--text" style="padding: 20px;">Nossos parceiros</h4>
+  </div>
+
+  <div class="row justify-content-between text-center">
+    
+
+    <div class="col-4 col-lg-2 mb-5 mb-lg-0">
+      <div class="mx-4">
+        <img class="img-fluid rounded-circle" src="suave.jpg" alt="Image Description" height= auto width="60">
+      </div>
+    </div>
+    <div class="col-4 col-lg-2 mb-5 mb-lg-0">
+      <div class="mx-4">
+        <img class="u-clients" src="../../assets/svg/clients-logo/paypal.svg" alt="Image Description">
+      </div>
+    </div>
+    <div class="col-4 col-lg-2">
+      <div class="mx-4">
+        <img class="u-clients" src="../../assets/svg/clients-logo/slack.svg" alt="Image Description">
+      </div>
+    </div>
+    <div class="col-4 col-lg-2">
+      <div class="mx-4">
+        <img class="u-clients" src="../../assets/svg/clients-logo/samsung.svg" alt="Image Description">
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</div>
+</div>
+<!-- End Clients Section -->
+<!--fim parcas-->
+
+<button id="scrollTopBtn" onclick="scrollTopFunction()"><i class="fas fa-arrow-up" style="color: #ffffff;"></i></button>
+
+
+
+     <!-- Footer Start -->
+     <div class="container-fluid2 bg-dark text-white-50 footer pt-3 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">FALE CONOSCO!</h5>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(11) 9 1234-5678</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>cintilavelas@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/cintilavelas/"><i class="fa fa-instagram"  style="color: #ffffff;" ></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 align-items-center">
+                    <h5 class="text-white mb-4">NAVEGAÇÃO</h5>
+                    <a class="btn btn-link text-white-50" href="index.html">Página inicial</a>
+                    <a class="btn btn-link text-white-50" href="Produtos.html">Produtos</a>
+                    <a class="btn btn-link text-white-50" href="sobrenos.html">Quem somos</a>
+                    <a class="btn btn-link text-white-50" href="Contatos.html">Contato</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">GALERIA DE FOTOS</h5>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="bauniexpo.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="Poncãxspo.png"">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded bg-light p-1" src="momileexpo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Faça parte do clube cintila!</h5>
+                    <p>Receba todas as informações em primeira mão.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Cintila</a>, Todos os direitos reservados. 
+                        
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Página inicial</a>
+                            <a href="Produtos.html">Produtos</a>
+                            <a href="sobrenos.html">Quem somos</a>
+                            <a href="Contatos.html">Contato</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Inclua os arquivos JavaScript do Bootstrap no final do corpo da página -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.js-slick-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                infinite: true
+                // Adicione mais opções conforme necessário
+            });
+        });
+  
+ 
+
+      // Função jQuery para mostrar/ocultar respostas quando a pergunta é clicada
+ 
+ // Mostrar ou ocultar o botão com base no scroll
+ window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var btn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+
+ // Função para rolar suavemente para o topo
+ function scrollTopAnimated() {
+            $("html, body").animate({ scrollTop: 0 }, 800);
+        }
+
+        // Associa a função ao botão
+        $('#scrollTopBtn').click(scrollTopAnimated);
+        document.getElementById('openBtn').addEventListener('click', function() {
+  document.getElementById('loginPopup').style.display = 'block';
+});
+
+document.getElementById('closeBtn').addEventListener('click', function() {
+  document.getElementById('loginPopup').style.display = 'none';
+});
+
+
+
+    const text = "intila!"; // Texto que será "digitado"
+    const typingContainer = document.getElementById('typing-container');
+
+    function typeWriter() {
+        let i = 0;
+        const typingInterval = setInterval(() => {
+            typingContainer.innerHTML += text[i];
+            i++;
+
+            if (i === text.length) {
+                clearInterval(typingInterval);
+            }
+        }, 120); // Ajuste a velocidade da animação aqui
+    }
+
+    // Chame a função quando a página carregar
+    window.onload = typeWriter;
+    </script>
+
+</body>
+</html>
+

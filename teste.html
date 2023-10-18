@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <head>
+        <!-- Adicione essas linhas ao seu cabeçalho -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    
+    <style>
+        /* Estilos opcionais para personalizar a aparência da galeria */
+        .slick-slide img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery {
+            max-width: 800px;
+            margin: auto;
+        }
+   
+        /* Adicione este estilo para arredondar as imagens */
+        .js-slick-carousel img {
+            border-radius: 10px; /* Ou qualquer valor que você preferir */
+            overflow: hidden;
+
+        
+        }
+        /* Personalização das bolinhas do carrossel */
+.slick-dots {
+    margin-top: 50px; /* Adicione o espaçamento desejado */
+}
+
+.slick-dots li button {
+    background-color: #814cc7; /* Cor desejada */
+    font-size: 12px; /* Tamanho desejado */
+    line-height: 12px;
+    border-radius: 10px; /* Ou qualquer valor que você preferir */
+}
+
+.slick-dots li.slick-active button {
+    background-color: #c2afe8; /* Cor desejada para a bolinha ativa */
+    border-radius: 10px; /* Ou qualquer valor que você preferir */
+}
+/* Adicione este estilo para adicionar margem entre as imagens do carrossel */
+.slick-slide {
+    margin-right: 10px; /* ou qualquer valor desejado para a margem à direita */
+    margin-left: 10px; /* ou qualquer valor desejado para a margem à esquerda */
+}
+
+
+    </style>
+    <title>Galeria de Imagens com Carrossel</title>
+</head>
+<body>
+    <div class="container">
+
+
+    <!-- Carrossel de Imagens -->
+    <div class="js-slick-carousel">
+        <div><img src="lilaca.png" alt="Imagem 4" class="img-fluid"></div>
+        <div><img src="moba.png" alt="Imagem 4" class="img-fluid" ></div>
+        <div><img src="poncanca.png" alt="Imagem 5" class="img-fluid" ></div>
+        <div><img src="booca.png" alt="Imagem 6" class="img-fluid" ></div>
+
+        <div><img src="cinnaca.png" alt="Imagem 5" class="img-fluid" ></div>
+
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.js-slick-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                infinite: true
+                // Adicione mais opções conforme necessário
+            });
+        });
+    </script>
+</body>
+
+</html>
